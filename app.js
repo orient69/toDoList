@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const { render } = require('ejs');
+const { response } = require('express');
 
 const app = express();
 app.set('view engine', 'ejs');
@@ -34,6 +35,6 @@ app.get('/', (req, res) => {
 	});
 });
 
-app.listen(8080, () => {
+app.listen(process.env.PORT || 8080, () => {
 	console.log('[SERVER RUNNING]...[ON SERVER 8080]');
 });

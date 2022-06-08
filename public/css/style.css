@@ -1,0 +1,93 @@
+html {
+  margin: 0;
+  padding: 0;
+  background-color: steelblue;
+  background-image: -webkit-linear-gradient(65deg, tomato 50%, steelblue 50%);
+  min-height: 100vh;
+  font-family: Helvetica, sans-serif;
+}
+
+.box {
+  max-width: 25%;
+  background-color: white;
+  border-radius: 0.5em;
+  margin: 2em auto;
+}
+
+.box .item {
+  margin-left: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box .item input[type='checkbox'] {
+  margin: 0.25em 1.25em;
+}
+
+.box .item input:checked + p {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.box .item p {
+  margin-left: 0.5em;
+  font-size: 1.25rem;
+}
+
+.box input[type='text'] {
+  margin: 1em;
+  padding: 1em;
+  border-radius: 0.5em;
+  background-color: whitesmoke;
+  border: 1px solid lightgray;
+}
+
+.box button {
+  margin: 1em;
+  font-size: 1.5rem;
+  padding: 0.35em 0.7em;
+  background-color: steelblue;
+  color: white;
+  border: none;
+  border-radius: 25%;
+}
+
+#heading {
+  max-width: 40%;
+  text-align: center;
+  background-color: tomato;
+  color: white;
+}
+
+#heading h1 {
+  padding: 0.25em 0.5em;
+}
+
+@media only screen and (max-width: 600px) {
+  .box {
+    max-width: 75%;
+  }
+  .box .item p {
+    font-size: 1rem;
+  }
+  .box input[type='text'] {
+    margin: 0.5em;
+    margin-left: 0;
+    padding: 0.5em;
+  }
+  .box button {
+    font-size: 1rem;
+    margin: 0.5em;
+  }
+  #heading {
+    max-width: 85%;
+  }
+  #heading h1 {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

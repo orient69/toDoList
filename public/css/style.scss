@@ -65,7 +65,7 @@ html {
 
 @media only screen and (max-width: 600px) {
 	.box {
-		max-width: 75%;
+		max-width: 90%;
 
 		.item p {
 			font-size: 1rem;
@@ -84,10 +84,20 @@ html {
 	}
 
 	#heading {
-		max-width: 85%;
+		max-width: 100%;
 
 		h1 {
 			font-size: 1.5rem;
 		}
+	}
+
+	.cright {
+		color: rgba(7, 30, 48, 0.37);
+		font-size: 0.75rem;
+		// background-color: white;
+		width: 40%;
+		margin: 8em auto;
+		padding: 1em;
+		text-align: center;
 	}
 }

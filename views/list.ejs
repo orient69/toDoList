@@ -12,12 +12,13 @@
 			<h1>It is <%= kindOfDay %></h1>
 		</div>
 		<div class="box">
-			<% for (let i=0; i < newItemList.length; i++) { %>
+			<% for (let i=0; i < newItemList.length; i++) { %> <% if
+			(newItemList.length < 6) { %>
 			<div class="item">
 				<input type="checkbox" />
 				<p><%= newItemList[i] %></p>
 			</div>
-			<% } %>
+			<% } %> <% } %>
 			<form class="item" action="/" method="post">
 				<input
 					type="text"
